@@ -141,6 +141,8 @@ function(input, output, session) {
         
       # MM: do not attempt to make plot unless we have the point estimate
         if( !is.na( bias.factor() ) ) {
+          
+          browser()
       
         rr.ud <- function(rr.eu) {
             
