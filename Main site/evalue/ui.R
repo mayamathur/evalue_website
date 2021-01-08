@@ -212,7 +212,7 @@ navbarPage( "E-value calculator", id = "navbar",
                         checkboxInput( 'makeplot', 'Show plot', FALSE ),
                         
                         conditionalPanel( condition = "input.makeplot == true",
-                                          plotlyOutput("curveOfExplainAway", width = "400px", height = "400px") ),
+                                          plotOutput("curveOfExplainAway", width = "400px", height = "400px") ),
                         
                         conditionalPanel( condition = "input.makeplot == true",
                                           HTML(paste("<br>Each point along the curve defines a joint relationship between the two sensitivity parameters that could potentially explain away the estimated effect.",
