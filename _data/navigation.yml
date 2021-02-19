@@ -1,0 +1,8 @@
+# main links
+main:
+  - title: "E-value calculator"
+    url: /
+  - title: "Compute an E-value"
+    url: /evalue/
+  - title: "More resources"
+    url: /resources/
