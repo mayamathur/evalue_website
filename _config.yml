@@ -183,6 +183,7 @@ exclude:
   - /test # ignore Minimal Mistakes /test
   - "*.Rmd" # R markdown source files
   - "*.Rproj" # RStudio project file
+  - .github
 keep_files:
   - .git
   - .svn
