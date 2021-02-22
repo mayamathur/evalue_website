@@ -7,7 +7,7 @@
 FROM analythium/r-shiny:4.0.3
 
 # change maintainer here
-LABEL maintainer="Peter Solymos <peter@analythium.io>"
+LABEL maintainer="Maya Mathur <mmathur@stanford.edu>"
 
 # add system dependencies for packages as needed
 RUN apt-get update && apt-get install -y --no-install-recommends \
