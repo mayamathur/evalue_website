@@ -1,4 +1,4 @@
 ---
 layout: app
-app_url: http://www.evalue-calculator.com/
+app_url: https://evalue-main.herokuapp.com/
 ---
