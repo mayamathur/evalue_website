@@ -1,0 +1,107 @@
+I"�<h2 id="more-resources-for-e-values-for-unmeasured-confounding">More resources for E-values for unmeasured confounding</h2>
+
+<p>In addition to using this website, you can alternatively compute 
+E-values (VanderWeele &amp; Ding, 2017) using the R package
+<a href="https://cran.r-project.org/web/packages/EValue/index.html">EValue</a>
+(Mathur et al., 2018) or the Stata module
+<a href="https://ideas.repec.org/c/boc/bocode/s458592.html">EVALUE</a> (Linden et
+al., 2020).</p>
+
+<p>For more information on the interpretation of the E-value and further
+technical details, see Ding &amp; VanderWeele (2016), Haneuse et al. (2019),
+VanderWeele et al. (2019a), and VanderWeele et al. (2019b).</p>
+
+<h2 id="more-resources-for-other-biases-and-study-designs">More resources for other biases and study designs</h2>
+
+<p>Methods and tools are also available to conduct analogous sensitivity
+analyses for other types of biases, including:</p>
+
+<ul>
+  <li>Selection bias (Smith &amp; VanderWeele, 2019a; website or R package
+<a href="https://cran.r-project.org/web/packages/EValue/index.html">EValue</a>)</li>
+  <li>Measurement error (VanderWeele &amp; Li, 2019; R package
+<a href="https://cran.r-project.org/web/packages/EValue/index.html">EValue</a>)</li>
+  <li>A combination of unmeasured confounding, selection bias, and
+measurement error simultaneously (Smith et al, 2020; R package
+<a href="https://cran.r-project.org/web/packages/EValue/index.html">EValue</a>)</li>
+  <li>An analog of the E-value is also available to address unmeasured
+mediator-outcome confounding when carrying out mediation analysis
+for direct and indirect effects (Smith &amp; VanderWeele, 2019b).</li>
+</ul>
+
+<p>Finally, similar approaches are also available to assess biases in
+meta-analyses including:</p>
+
+<ul>
+  <li>Unmeasured confounding in meta-analyses (Mathur &amp; VanderWeele,
+2020a; website or R package EValue)</li>
+  <li>Publication bias in meta-analyses (Mathur &amp; VanderWeele, 2020b; R
+package PublicationBias)</li>
+</ul>
+
+<h2 id="developers">Developers</h2>
+
+<p>This website was created by <a href="https://profiles.stanford.edu/maya-mathur">Maya
+Mathur</a>, <a href="https://sites.google.com/site/pengdingpku/">Peng
+Ding</a>, <a href="https://sph.berkeley.edu/corinne-riddell-phd">Corinne
+Riddell</a>, <a href="">Louisa
+Smith</a>, and <a href="https://www.hsph.harvard.edu/tyler-vanderweele/tools-and-tutorials/">Tyler
+VanderWeele</a>.</p>
+
+<h2 id="references">References</h2>
+
+<p>Ding P &amp; VanderWeele TJ (2016). Sensitivity analysis without
+assumptions. Epidemiology, 27(3), 368–377.
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4820664/">Link</a></p>
+
+<p>Haneuse S, VanderWeele TJ, &amp; Arterburn D (2019). Using the E-value to
+assess the potential effect of unmeasured confounding in observational
+studies. Journal of the American Medical Association, 321(6), 602-603.
+<a href="https://jamanetwork.com/journals/jama/fullarticle/2723079?casa_token=vP0UXdEX4HAAAAAA:y0GoUYecb4QvGnn23FNxpnOsBu5Z70-DW1apD84XqPWNL0kXYDXlT5hQVweAUZVh6zJe9BU_sA">Link</a></p>
+
+<p>Linden A, Mathur MB, &amp; VanderWeele TJ (2020). Conducting sensitivity
+analysis for unmeasured confounding in observational studies using
+E-values: The evalue package. The Stata Journal (in press).
+<a href="https://journals.sagepub.com/doi/abs/10.1177/1536867X20909696">Link</a></p>
+
+<p>Mathur MB, Ding P, Riddell CA, &amp; VanderWeele TJ (2018). Website and R
+package for computing E-values. Epidemiology 29(5), e45.
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6066405/">Link</a></p>
+
+<p>Mathur MB &amp; VanderWeele TJ (2020a). Sensitivity analysis for unmeasured
+confounding in meta-analyses. Journal of the American Statistical
+Association 115(529), 163-170.
+<a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598">Link</a></p>
+
+<p>Mathur MB &amp; VanderWeele TJ (2020b). Sensitivity analysis for publication
+bias in meta-analyses. Journal of the Royal Statistical Society: Series
+C. In press. <a href="https://osf.io/s9dp6/">Link</a></p>
+
+<p>Smith LH &amp; VanderWeele TJ (2019a). Bounding bias due to selection.
+Epidemiology 30(4), 509.
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553568/">Link</a></p>
+
+<p>Smith LH &amp; VanderWeele TJ (2019b). Mediational E-values: Approximate
+sensitivity analysis for mediator-outcome confounding. Epidemiology
+30(6), 835-837.
+<a href="https://journals.lww.com/epidem/Fulltext/2019/11000/Mediational_E_values__Approximate_Sensitivity.9.aspx">Link</a></p>
+
+<p>VanderWeele TJ &amp; Ding P (2017). Sensitivity analysis in observational
+research: Introducing the E-value. Annals of Internal Medicine, 167(4),
+268-274.
+<a href="https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value">Link</a></p>
+
+<p>VanderWeele TJ, Ding P, &amp; Mathur MB (2019a). Technical considerations in
+the use of the E-value. Journal of Causal Inference, 7(2).
+<a href="https://www.degruyter.com/view/journals/jci/7/2/article-20180007.xml">Link</a></p>
+
+<p>VanderWeele TJ, Mathur MB, &amp; Ding P (2019b). Correcting
+misinterpretations of the E-value. Annals of Internal Medicine 170(2),
+131-132.
+<a href="https://annals.org/aim/article-abstract/2719984/correcting-misinterpretations-e-value">Link</a></p>
+
+<p>VanderWeele TJ &amp; Li Y (2019). Simple sensitivity analysis for
+differential measurement error. American Journal of Epidemiology,
+188(10), 1823-1829.
+<a href="https://academic.oup.com/aje/article/188/10/1823/5506602?casa_token=5ZyiVJp9_5UAAAAA:40rpOH1mRz0IDeRJ35atRRk9x6MJgIHMNOxLCcsnfouzN3qWXrght0XVWNIHQcRwWP1Bhgl8vY9B">Link</a></p>
+:ET
