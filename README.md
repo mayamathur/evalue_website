@@ -74,16 +74,7 @@ the master branch.
 ## Custom domains
 
 I would recommend setting up a www subdomain: `http://www.evalue-calculator.com/`
-following [this](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) guide.
-
-1. Go to the Settings tab of the repo, scroll down to the GitHub Pages section
-2. Add `www.evalue-calculator.com` to the Custom Domain field and click Save
-3. Go to your DNS settings on your provider's page (see [here](https://support.google.com/domains/answer/9211383?hl=en))
-  - In the first field, enter `www` or the required subdomain
-  - In the dropdown menu, select CNAME
-  - In the TTL field, enter 1H
-  - In the data field, enter `mayamathur.github.io`
-  - Click Add
+following [this](https://docs.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages#using-an-apex-domain-for-your-github-pages-site) and [this](https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site) guide.
 
 ## Deploy Shiny apps
 
@@ -135,38 +126,3 @@ You will have to add a new job to the `deploy.yml` file (see section that
 is commented out), specify the trigger words, app directory, and app name.
 
 Once the app is deployed, you can add a page and navigation entry for the new app as desribed above.
-
-## Local development with jekyll
-
-Install jekyll (one time setup inside the directory): skip steps as appropriate, e.g. if you have Ruby installed etc (`ruby -v` should return Ruby version).
-https://jekyllrb.com/docs/installation/
-
-```bash
-# Install Command Line Tools
-xcode-select --install
-
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Install Ruby
-brew install ruby
-
-# Add the brew ruby path to your shell configuration:
-echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
-
-# Install Jekyll
-gem install --user-install bundler jekyll
-
-# Install gems (dependencies) for the template
-bundle install
-```
-
-When you edit your files and want to check locally how the site looks, use this:
-
-```bash
-bundle exec jekyll serve
-```
-
-This will build the site that you can check at `http://127.0.0.1:4000` in
-your browser. When you change the source it will reload the changes
-(hot reload). Stop the server with Ctrl+C.
