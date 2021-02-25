@@ -50,3 +50,8 @@ Temporary Items
 
 renv
 .Rprofile
+
+# Jekyll related files
+.jekyll-cache*
+Gemfile.lock
+
