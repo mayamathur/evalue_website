@@ -22,7 +22,7 @@ jobs:
           # app directory needs to be set relative to root of repo
           appdir: "_shinyapps/evalue"
           # this is the Heroku app name you already set up in dashboard
-          heroku_app_name: shiny-app-folder
+          heroku_app_name: evalue-main
           # secrets need to be added to the GitHub repo settings
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_email: ${{ secrets.HEROKU_EMAIL }}

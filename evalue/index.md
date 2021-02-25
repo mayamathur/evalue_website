@@ -1,4 +1,4 @@
 ---
 layout: app
-app_url: https://evalue-main.herokuapp.com/
+app_url: http://evalue-main.herokuapp.com/
 ---
