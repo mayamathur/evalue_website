@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: 
 layout: archive
 output:
   md_document:
