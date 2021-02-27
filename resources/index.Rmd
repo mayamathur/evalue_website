@@ -63,7 +63,7 @@ Smith LH & VanderWeele TJ (2019a). Bounding bias due to selection. Epidemiology 
 
 Smith LH & VanderWeele TJ (2019b). Mediational E-values: Approximate sensitivity analysis for mediator-outcome confounding. Epidemiology 30(6), 835-837. [Link](https://journals.lww.com/epidem/Fulltext/2019/11000/Mediational_E_values__Approximate_Sensitivity.9.aspx)
 
-Smith LH & VanderWeele TJ (2020). Multiple-bias sensitivity analysis using bounds. Epidemiology (in press). [Link](https://arxiv.org/abs/2005.02908)
+Smith LH & VanderWeele TJ (2021). Multiple-bias sensitivity analysis using bounds. Epidemiology (in press). [Link](https://arxiv.org/abs/2005.02908)
 
 VanderWeele TJ & Ding P (2017). Sensitivity analysis in observational research: Introducing the E-value. Annals of Internal Medicine, 167(4), 268-274. [Link](https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value)
 
