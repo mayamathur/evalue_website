@@ -10,6 +10,7 @@ on:
 jobs:
 
   evalue: # name the job according to the app name
+    name: Build and deploy evalue app
     runs-on: ubuntu-latest
     # Commit message needs to contain 'deploy evalue' to trigger the job
     if: "contains(github.event.head_commit.message, 'deploy evalue')"
@@ -28,35 +29,18 @@ jobs:
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
           usedocker: true # don't change this
 
-# # git deploy: "You have an error in your yaml syntax on line 31"
-#  metasens: # name the job according to the app name
-#    runs-on: ubuntu-latest
-#    # commit message needs to contain 'deploy app2' to trigger the job
-#    if: "contains(github.event.head_commit.message, 'deploy metasens')"
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2s
-#      - name: Build and push Docker to Heroku
-#        uses: akhileshns/heroku-deploy@v3.11.10
-#        with:
-#          appdir: "_shinyapps/metasens"
-#          heroku_app_name: evalue-metasens
-#          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-#          heroku_email: ${{ secrets.HEROKU_EMAIL }}
-#          usedocker: true
-
-#  app2: # name the job according to the app name
-#    runs-on: ubuntu-latest
-#    # commit message needs to contain 'deploy app2' to trigger the job
-#    if: "contains(github.event.head_commit.message, 'deploy app2')"
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v2
-#      - name: Build and push Docker to Heroku
-#        uses: akhileshns/heroku-deploy@v3.11.10
-#        with:
-#          appdir: "_shinyapps/app2"
-#          heroku_app_name: shiny-app2
-#          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-#          heroku_email: ${{ secrets.HEROKU_EMAIL }}
-#          usedocker: true
+  metasens:
+    name: Build and deploy metasens app
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, 'deploy metasens')"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2s
+      - name: Build and push Docker to Heroku
+        uses: akhileshns/heroku-deploy@v3.11.10
+        with:
+          appdir: "_shinyapps/metasens"
+          heroku_app_name: evalue-metasens
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          usedocker: true
