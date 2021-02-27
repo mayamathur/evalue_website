@@ -1,0 +1,15 @@
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210227-64022-4pc4fk.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+/bin/sh: -c: line 0: syntax error near unexpected token `('
+/bin/sh: -c: line 0: `xcrun clang -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin19 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/ruby/backward -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT     -g -Os -pipe -DHAVE_GCC_ATOMIC_BUILTINS -I/Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser -arch x86_64 -o ruby_http_parser.o -c ruby_http_parser.c'
+make: *** [ruby_http_parser.o] Error 2
+
+make failed, exit code 2
