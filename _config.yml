@@ -27,6 +27,7 @@ repository               : mayamathur/evalue_website # GitHub username/repo-name
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# screenshots of skins: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 
 # Site Settings
 locale                   : "en-US"
