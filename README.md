@@ -84,6 +84,11 @@ following [this](https://docs.github.com/en/github/working-with-github-pages/man
   - In the TTL field, enter 1H
   - In the data field, enter `mayamathur.github.io`
   - Click Add
+  
+  
+## Edit the outer framework of the website
+
+To edit the outer framework exclusive of the Shiny app iFrame itself (e.g., the Resources tab), just edit and knit the relevant .Rmd file, commit as normal (with no special message), and push. Remember that need to knit the .Rmd file or else the changes will not be reflected in the .md file, which is what the website ultimately uses.
 
 ## Deploy Shiny apps
 
