@@ -1,5 +1,5 @@
 ---
-title: [test]
+title: Instructions
 layout: archive
 output:
   md_document:
