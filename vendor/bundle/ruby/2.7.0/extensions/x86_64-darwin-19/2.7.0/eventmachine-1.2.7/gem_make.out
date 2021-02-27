@@ -1,0 +1,16 @@
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/opt/ruby/bin/ruby -I /usr/local/Cellar/ruby/2.7.2/lib/ruby/2.7.0 -r ./siteconf20210227-85810-1z57ln.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/mmathur/Dropbox/Personal computer/Independent studies/Permanent websites/EValue website/evalue_website (git)/evalue_website/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20210227-85810-1puy17k

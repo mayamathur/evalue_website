@@ -9,7 +9,7 @@ output:
 
 ## More resources for E-values for unmeasured confounding
 
-In addition to using this website, you can alternatively compute
+In addition to using this online tool, you can alternatively compute
 E-values (VanderWeele & Ding, 2017) using the R package
 [EValue](https://cran.r-project.org/web/packages/EValue/index.html)
 (Mathur et al., 2018) or the Stata module
@@ -25,7 +25,8 @@ VanderWeele et al. (2019a), and VanderWeele et al. (2019b).
 Methods and tools are also available to conduct analogous sensitivity
 analyses for other types of biases, including:
 
-  - Selection bias (Smith & VanderWeele, 2019a; website or R package
+  - Selection bias (Smith & VanderWeele, 2019a; [online
+    tool](http://www.selection-bias.com/) or R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Measurement error (VanderWeele & Li, 2019; R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
@@ -40,15 +41,17 @@ Finally, similar approaches are also available to assess biases in
 meta-analyses including:
 
   - Unmeasured confounding in meta-analyses (Mathur & VanderWeele,
-    2020a; website or R package EValue)
+    2020a; [online tool](http://www.evalue-calculator.com/meta/) or R
+    package
+    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Publication bias in meta-analyses (Mathur & VanderWeele, 2020b; R
-    package PublicationBias)
+    package
+    [PublicationBias](https://cran.r-project.org/web/packages/PublicationBias/index.html))
 
 ## Developers
 
-This website was created by [Maya
-Mathur](https://profiles.stanford.edu/maya-mathur), [Peng
-Ding](https://sites.google.com/site/pengdingpku/), [Corinne
+This website was created by [Maya Mathur](https://www.mayamathur.com/),
+[Peng Ding](https://sites.google.com/site/pengdingpku/), [Corinne
 Riddell](https://sph.berkeley.edu/corinne-riddell-phd), [Louisa
 Smith](https://www.louisahsmith.com/), [Tyler
 VanderWeele](https://www.hsph.harvard.edu/tyler-vanderweele/tools-and-tutorials/),
@@ -77,7 +80,8 @@ package for computing E-values. Epidemiology 29(5), e45-e47.
 Mathur MB & VanderWeele TJ (2020a). Sensitivity analysis for unmeasured
 confounding in meta-analyses. Journal of the American Statistical
 Association 115(529), 163-170.
-[Link](https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598)
+[Link](https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598);
+[online tool](http://www.evalue-calculator.com/meta/)
 
 Mathur MB & VanderWeele TJ (2020b). Sensitivity analysis for publication
 bias in meta-analyses. Journal of the Royal Statistical Society: Series
@@ -86,14 +90,15 @@ C, 69(5), 1091-1119.
 
 Smith LH & VanderWeele TJ (2019a). Bounding bias due to selection.
 Epidemiology 30(4), 509-516.
-[Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553568/)
+[Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553568/); [online
+tool](http://www.selection-bias.com/)
 
 Smith LH & VanderWeele TJ (2019b). Mediational E-values: Approximate
 sensitivity analysis for mediator-outcome confounding. Epidemiology
 30(6), 835-837.
 [Link](https://journals.lww.com/epidem/Fulltext/2019/11000/Mediational_E_values__Approximate_Sensitivity.9.aspx)
 
-Smith LH & VanderWeele TJ (2020). Multiple-bias sensitivity analysis
+Smith LH & VanderWeele TJ (2021). Multiple-bias sensitivity analysis
 using bounds. Epidemiology (in press).
 [Link](https://arxiv.org/abs/2005.02908)
 
