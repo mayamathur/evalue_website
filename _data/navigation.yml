@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "E-value calculator"
+  - title: "Instructions"
     url: /
   - title: "Compute an E-value"
     url: /evalue/
