@@ -39,9 +39,9 @@ body {
 .page {
   @include breakpoint($large) {
     float: right;
-    {% width: calc(100% - #{$right-sidebar-width-narrow}); %}
-    {% padding-right: $right-sidebar-width-narrow; %}
-    width: 100%; {% MM additions %}
+    /* width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow; */
+    width: 100%; /* MM additions */
     padding-right: 0;
   }
 
