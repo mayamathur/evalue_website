@@ -13,7 +13,7 @@ Please use the following citations when using this website:
 
 1.  Mathur MB, Ding P, Riddell CA, VanderWeele TJ (2018). Website and R
     package for computing E-values. Epidemiology, 29(5), e45-e47.
-    [Link](https://journals.lww.com/epidem/Citation/publishahead/Website_and_R_Package_for_Computing_E_Values.98679.aspx).s
+    [Link](https://journals.lww.com/epidem/Citation/publishahead/Website_and_R_Package_for_Computing_E_Values.98679.aspx)
 2.  VanderWeele TJ & Ding P (2017). Sensitivity analysis in
     observational research: introducing the E-value. Annals of Internal
     Medicine, 167(4), 268-274.
