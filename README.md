@@ -148,6 +148,8 @@ Once the app is deployed, you can add a page and navigation entry for the new ap
 Install jekyll (one time setup inside the directory): skip steps as appropriate, e.g. if you have Ruby installed etc (`ruby -v` should return Ruby version).
 https://jekyllrb.com/docs/installation/
 
+This will install jekyll to `evalue_website/vendor`. Important: To avoid errors in `bundle install`, the entire file path to ruby (which will be in `evalue_website/vendor`) needs to not have spaces in the directory names. Chagne them to underscores before the installation.
+
 ```bash
 # Install Command Line Tools
 xcode-select --install
@@ -159,7 +161,7 @@ xcode-select --install
 brew install ruby
 
 # Add the brew ruby path to your shell configuration:
-echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.bash_profile
+PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 # Install Jekyll
 gem install --user-install bundler jekyll

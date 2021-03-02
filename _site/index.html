@@ -1,0 +1,266 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.22.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>How to use this website - E-value calculator</title>
+<meta name="description" content="Calculate E-values.">
+
+
+  <meta name="author" content="Your Name">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E-value calculator">
+<meta property="og:title" content="How to use this website">
+<meta property="og:url" content="https://evalue-main.herokuapp.com//">
+
+
+  <meta property="og:description" content="Calculate E-values.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://evalue-main.herokuapp.com//">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Maya Mathur",
+      "url": "https://evalue-main.herokuapp.com//"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="E-value calculator Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--archive">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          E-value calculator
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Instructions</a>
+            </li><li class="masthead__menu-item">
+              <a href="/evalue/">Compute an E-value</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">More resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">How to use this website</h1>
+    
+    <h2 id="citations">Citations</h2>
+
+<p>Please use the following citations when using this website:</p>
+
+<ol>
+  <li>Mathur MB, Ding P, Riddell CA, VanderWeele TJ (2018). Website and R
+package for computing E-values. Epidemiology, 29(5), e45-e47.
+<a href="https://journals.lww.com/epidem/Citation/publishahead/Website_and_R_Package_for_Computing_E_Values.98679.aspx">Link</a></li>
+  <li>VanderWeele TJ &amp; Ding P (2017). Sensitivity analysis in
+observational research: introducing the E-value. Annals of Internal
+Medicine, 167(4), 268-274.
+<a href="http://annals.org/aim/article-abstract/2643434/sensitivity-analysis-observational-research-introducing-e-value?doi=10.7326%2fM16-2607">Link</a></li>
+</ol>
+
+<h2 id="computing-an-e-value">Computing an E-value</h2>
+
+<p>The tab <a href="http://www.evalue-calculator.com/evalue/">Compute an E-value</a>
+computes the E-value, defined as the minimum strength of association on
+the risk ratio scale that an unmeasured confounder would need to have
+with both the exposure and the outcome, conditional on the measured
+covariates, to fully explain away a specific exposure-outcome
+association. Note that for outcome types other than relative risks,
+assumptions are involved with the approximate conversions used
+(VanderWeele &amp; Ding, 2017).</p>
+
+<p>Alternatively, you can consider the confounding strength capable of
+moving the observed association to any other value (e.g. attenuating the
+observed association to a true causal effect that is no longer
+scientifically important, or alternatively increasing a near-null
+observed association to a value that is of scientific importance). For
+this purpose, simply type a non-null effect size into the box “True
+causal effect to which to shift estimate” when computing the E-value.</p>
+
+<h2 id="computing-a-bias-factor">Computing a bias factor</h2>
+
+<p>Additionally, if you have substantive knowledge on the strength of the
+relationships between the unmeasured confounder(s) and the exposure and
+outcome, you can use these numbers to <a href="https://bias-factor.hmdc.harvard.edu/">calculate the bias
+factor</a>.</p>
+
+<h2 id="bug-reports">Bug reports</h2>
+
+<p>Submit any bug reports to: <code class="language-plaintext highlighter-rouge">mmathur [AT] stanford [DOT] edu</code> or open an
+issue on <a href="https://github.com/mayamathur/evalue/issues">GitHub</a>.</p>
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Maya Mathur</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
