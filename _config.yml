@@ -15,7 +15,7 @@
 title                    : "E-value calculator"
 name                     : "Maya Mathur"
 description              : "Calculate E-values."
-url                      : https://evalue-main.herokuapp.com/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://evalue-main.herokuapp.com/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : mayamathur/evalue_website # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 
