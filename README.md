@@ -88,11 +88,15 @@ following [this](https://docs.github.com/en/github/working-with-github-pages/man
   
 ## Editing the outer UI of the website
 
-To edit the outer framework exclusive of the Shiny app iFrame itself (e.g., the Resources tab), just edit and knit the relevant .Rmd file, commit as normal (with no special message), and push. Remember that need to knit the .Rmd file or else the changes will not be reflected in the .md file, which is what the website ultimately uses.
+To edit the outer framework exclusive of the Shiny app iframe itself (e.g., the Resources tab), just edit and knit the relevant .Rmd file, commit as normal (with no special message), and push. Remember you need to knit the .Rmd file or else the changes will not be reflected in the .md file, which is what the website ultimately uses.
 
-To change the Minimal Mistakes default aesthetics (e.g., fonts), edit _sass/minimal-mistakes/_variables.scss.
+* Changing font sizes: Edit per comments in `assests/css/main.scss`.
+* Changing fonts: Edit `_sass/minimal-mistakes/_variables.scss` (not tested). 
+* Changing width of text on page (i.e., change whitespace on either side of text column): Edit per comments in `_sass/minimal_mistakes/_archive.scss`. 
 
-## Deploy Shiny apps
+Note: We are using the "archive" layout (`_sass/minimal_mistakes/_archive.scss`), so if you want to change a parameter that is normally in `_page.scss`, you should change it in `_archive.scss` instead. 
+
+## Deploying Shiny apps
 
 The shiny apps live inside the `_shinyapps` folder (Jekyll ignores directories
 that begin with underscore, thus we don't need to worry about publishing the

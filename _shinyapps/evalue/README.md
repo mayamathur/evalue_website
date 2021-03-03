@@ -58,3 +58,12 @@ Solutions:
 - find the error log in GitHub action output: `Error: install of package 'xml2' failed`
 - find system dependencies (often listed near the error): `Configuration failed because libxml-2.0 was not found. Try installing: deb: libxml2-dev (Debian, Ubuntu, etc)`
 - if it is not listed, see https://github.com/rstudio/r-system-requirements or https://github.com/r-hub/sysreqsdb
+
+## Other topics
+
+### Monitoring Heroku apps' dyno usage
+
+You can check on how much of the Heroku account's monthly dyno quota has been used either in the CLI (`heroku ps -a <app-name>`) or in the Heroku website "Billing" tab. Note that Heroku apparently counts active hours much more liberally than Google Analytics' session duration metrics.
+
+
+

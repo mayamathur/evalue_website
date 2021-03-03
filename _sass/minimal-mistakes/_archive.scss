@@ -6,9 +6,11 @@
   margin-top: 1em;
   margin-bottom: 2em;
 
+    // we changed this to reduce whitespace on either side of the text cols:
   width: 100%;
   padding-right: 0%;
 
+    // the default:
   // @include breakpoint($large) {
   //   float: right;
   //   width: calc(100% - #{$right-sidebar-width-narrow});
