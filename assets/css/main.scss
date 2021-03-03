@@ -7,21 +7,20 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-
 /* try changing font sizes */
 /* https://github.com/mmistakes/minimal-mistakes/discussions/1219 */
 html {
-  font-size: 10px; // change to whatever
+  font-size: 16px; // change to whatever
 
   @include breakpoint($medium) {
-    font-size: 18px; // change to whatever
+    font-size: 16px; // change to whatever
   }
 
   @include breakpoint($large) {
-    font-size: 20px; // change to whatever
+    font-size: 18px; // change to whatever
   }
 
   @include breakpoint($x-large) {
-    font-size: 22px; // change to whatever
+    font-size: 18px; // change to whatever
   }
-};
+}
