@@ -1,1 +1,0 @@
-Sitemap: https://evalue-main.herokuapp.com//sitemap.xml

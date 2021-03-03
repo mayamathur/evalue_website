@@ -52,6 +52,10 @@ renv
 .Rprofile
 
 # Jekyll related files
-.jekyll-cache*
 Gemfile.lock
-
+_site/
+.sass-cache/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
