@@ -15,7 +15,7 @@ ui <- navbarPage( "Sensitivity analysis for unmeasured confounding in meta-analy
                                             "<b>Sensitivity analysis for the pooled point estimate</b>",
 
 
-                                            'This tab computes the E-value for the pooled point estimate of a meta-analysis (Section 7.2 of <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598">Mathur & VanderWeele, 2020a</a>; see <a href="https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value">VanderWeele & Ding (2017)</a> for more on E-values in general). This meta-analysis E-value represents the average severity of confounding in the meta-analyzed studies (i.e., the minimum strength of association
+                                            'This tab computes the E-value for the pooled point estimate of a meta-analysis (Section 7.2 of <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598">Mathur & VanderWeele, 2020a</a>; see <a href="https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value">VanderWeele & Ding (2017)</a> and <a href="https://www.evalue-calculator.com/resources">this page</a> for more on E-values in general). This meta-analysis E-value represents the average severity of confounding in the meta-analyzed studies (i.e., the minimum strength of association
                                             on the risk ratio scale that unmeasured confounder(s) would need to have with both the exposure
                                             and the outcome, conditional on the measured covariates), to fully explain away the observed meta-analytic point estimate in the sense of shifting it to the null. Note that for outcome types other than relative risks, assumptions
                                             are involved with the approximate conversions used. See <a href="https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value">VanderWeele & Ding (2017)</a> for details.',
@@ -490,7 +490,57 @@ hr(),
                          ) ### closes tabPanel "Parametric"
                      ) ### closes tabsetPanel
 
-            ) ### closes tabPanel "Fixed sensitivity parameters"
+            ), ### closes tabPanel "Fixed sensitivity parameters"
+
+tabPanel("More resources",
+
+         mainPanel(      HTML(paste(
+
+
+             "<b>More resources for these sensitivity analyses</b>",
+
+             "<br><br>In addition to using this website, you can alternatively conduct these sensitivity analyses
+
+                       using the functions <code>confounded_meta</code> and <code>sens_plot</code> in the R package <a href='https://cran.r-project.org/web/packages/EValue/index.html'>EValue</a> (<a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6066405/'>Mathur et al., 2018</a>).",
+
+             "<br><br>For more information on the interpretation of these sensitivity analyses and guidance on choosing the sensitivity parameters, see <a href='https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598'>Mathur & VanderWeele (2020a)</a>,
+                       and for a review of methods to choose a threshold representing a meaningfully strong effect size, see the Supplement of <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/sim.8057'>Mathur & VanderWeele (2019).</a>
+                       For more on the robust estimation methods, see <a href='https://journals.lww.com/epidem/Fulltext/2020/05000/Robust_Metrics_and_Sensitivity_Analyses_for.7.aspx?casa_token=PELPmhG6P3wAAAAA:D2bYC3kXCtRmncY-ELNt4I8ub1ZUhwTQjsFq8vh05h_EhV4kOJQuR3L97TsSLtun4zQ26Ys26ayF3aleMKj-93Q'>Mathur & VanderWeele (2020b).</a></a>",
+
+
+
+             "<br><br><b>More resources for other biases in meta-analyses</b>",
+
+             "<br><br>Similar methods and tools are also available to conduct analogous sensitivity analyses for other types of biases as follows. </br></br>
+
+                       <ul>
+                       <li>Publication bias in meta-analyses (<a href='https://osf.io/s9dp6/'>Mathur & VanderWeele, 2020c</a>;
+                       R package <a href='https://cran.r-project.org/web/packages/PublicationBias/index.html'>PublicationBias</a>)</li>
+
+                       </ul>
+                       ",
+
+             "<br><b>References for meta-analysis</b><br>",
+
+
+             "<ul>
+
+
+                       <li> <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6066405/'>Mathur MB, Ding P, Riddell CA, & VanderWeele TJ (2018).</a> Website and R package for computing E-values. <i>Epidemiology</i> 29(5), e45.</li>
+
+                       <li> <a href='https://onlinelibrary.wiley.com/doi/full/10.1002/sim.8057'>Mathur MB & VanderWeele TJ (2019).</a> New statistical metrics for meta-analyses of heterogeneous effects. <i>Statistics in Medicine</i> 38(8), 1336-1342.</li>
+
+
+                       <li><a href='https://www.tandfonline.com/doi/full/10.1080/01621459.2018.1529598'>Mathur MB & VanderWeele TJ (2020a)</a>. Sensitivity analysis for unmeasured confounding in meta-analyses. <i>Journal of the American Statistical Association</i> 115(529), 163-170.</li>
+
+                       <li><a href='https://pubmed.ncbi.nlm.nih.gov/32141922/'>Mathur MB & VanderWeele TJ (2020b)</a>. Robust metrics and sensitivity analyses for meta-analyses of heterogeneous effects. <i>Epidemiology</i> 31(3), 356-358.</li>
+
+                       </ul>"
+
+
+
+         ) ) )
+)
 
                      ) ## closes navbarPage
 
