@@ -8,7 +8,7 @@
     - [Website deployment](#website-deployment)
     - [Custom domains](#custom-domains)
     - [Editing the outer UI of the website](#editing-the-outer-ui-of-the-website)
-  - [Deploying Shiny apps](#deploying-shiny-apps)
+  - [Deploying Shiny apps to Heroku](#deploying-shiny-apps-to-heroku)
     - [Heroku deployment](#heroku-deployment)
   - [Local development with jekyll](#local-development-with-jekyll)
 
@@ -23,8 +23,21 @@ See full [config](https://mmistakes.github.io/minimal-mistakes/docs/configuratio
 The following are the most important places where you need to make changes
 (see comments in these files also):
 
-- edit `_config.yml` to update site metadata, Google Analytics etc
-- edit `_data/navigation` to add more tabs to the top navigation
+- edit `_config.yml` to update site metadata
+  - most important settings (site title, name, url) are highlighted at the top, 
+  - you can add Google Analytics tracking ID
+- edit `_data/navigation.yml` to add more tabs to the top navigation: title and url (relative to site url)
+
+```yaml
+# main links in _data/navigation.yml
+main:
+  - title: "Instructions"
+    url: /
+  - title: "Compute an E-value"
+    url: /evalue/
+  - title: "More resources"
+    url: /resources/
+```
 
 ### Adding a new page
 
@@ -32,13 +45,13 @@ Open the `site.Rproj` file in RStudio IDE.
 Open Rmd files you'd like to edit. Click render.
 Jekyll will ignore Rmd, and will deploy html based on the md files.
 
-Adding a new page under `http://site.com/path/dir/`:
+Adding a new page under `http://evalue-calculator.com/path/dir/`:
 
 1. create folder `path/dir`
 2. add `index.Rmd` into the folder (see below for what goes into the header)
-3. Edit Rmd then render md
+3. Edit Rmd then render the md
 
-This is the part that goes into the Rmd header:
+This is the part that goes into the Rmd header of the file `path/dir/index.Rmd`:
 
 ```yaml
 ---
@@ -61,7 +74,7 @@ See [this](https://rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2
 ### Adding new page for a Shiny app
 
 Here is how you can add Shiny apps that are already deployed. (See
-[Shiny app deployment](#deploying-shiny-apps) below.)
+[Shiny app deployment](#deploying-shiny-apps-to-heroku) below.)
 
 Create new folder in the root, e.g. `app` and add `app/index.md` file
 with the following content: change the app url
@@ -73,16 +86,16 @@ app_url: https://shiny-app1.heroku.com/
 ---
 ```
 
-This will indicate to the Jakyll template to use the `app` layout (which puts the iframe around the app URL). The `app_url` is the link that will show up in the iframe.
+This will indicate to the Jekyll template to use the `app` layout (which puts the iframe around the app URL). The `app_url` is the link that will show up in the iframe.
 
 If the website is served over https, the iframe needs to be https as well.
 
 ### Website deployment
 
 GitHub pages use Jekyll, so no additional steps are required.
-Commit changes and done. Make sure you go to the Settings tab
+Commit changes and it is done. Make sure you go to the Settings tab
 of the repo and set GitHub pages deployment from the root folder of
-the master branch.
+the master/main branch.
 
 ### Custom domains
 
@@ -108,7 +121,7 @@ To edit the outer framework exclusive of the Shiny app iframe itself (e.g., the 
 
 Note: We are using the "archive" layout (`_sass/minimal_mistakes/_archive.scss`), so if you want to change a parameter that is normally in `_page.scss`, you should change it in `_archive.scss` instead.
 
-## Deploying Shiny apps
+## Deploying Shiny apps to Heroku
 
 The shiny apps live inside the `_shinyapps` folder (Jekyll ignores directories
 that begin with underscore, thus we don't need to worry about publishing the
@@ -140,13 +153,14 @@ This workflow works with public and private repositories.
   - `HEROKU_API_KEY`: your Heroku api key, you can find it under your personal settings, click on reveal and copy
 4. Trigger the GitHub action by a new commit to the repo (see below).
 
-See the `.github/workflows/deploy.yml` file for additional options:
+See the `.github/workflows/deploy.yml` file for additional options (see also comments in the yaml file):
 
 - set the `appdir` variable to e.g. `_shinyapps/evalue`, this is the directory the script will use to find the Shiny files relative to the Dockerfile in the root of this directory
 - add the Heroku app name (shiny-example) that was set up in the Heroku dashboard previously
+- the job name must be unique in the yaml file to avoid parsing errors
 
 The plan is to add multiple Shiny apps in the same GitHub repo,
-thus we need a mechanisms that only deploys one app at a time.
+thus we need a mechanism that only deploys one app at a time.
 The solution is to make the GitHub action jobs conditional
 on certain words in the commit message. E.g.
 it only deploys if the message contains `deploy evalue`.
