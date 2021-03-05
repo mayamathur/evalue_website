@@ -178,7 +178,7 @@ exclude:
   - package.json
   - package-lock.json
   - Rakefile
-  - README
+  - README.md
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
