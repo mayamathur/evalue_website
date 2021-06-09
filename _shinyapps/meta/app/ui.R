@@ -1,4 +1,4 @@
-ui <- navbarPage( "Sensitivity analysis for unmeasured confounding in meta-analyses", id = "navbar",
+ui <- navbarPage( "*Sensitivity analysis for unmeasured confounding in meta-analyses", id = "navbar",
 
 
             theme = shinytheme("flatly"),
