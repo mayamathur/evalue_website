@@ -11,6 +11,7 @@
   - [Deploying Shiny apps to Heroku](#deploying-shiny-apps-to-heroku)
     - [Heroku deployment](#heroku-deployment)
   - [Local development with jekyll](#local-development-with-jekyll)
+  - [Troubleshooting common error messages](#troubleshooting-common-error-messages)
 
 Based on the [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 under and MIT license.
