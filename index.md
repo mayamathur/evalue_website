@@ -26,9 +26,11 @@ computes the E-value, defined as the minimum strength of association on
 the risk ratio scale that an unmeasured confounder would need to have
 with both the exposure and the outcome, conditional on the measured
 covariates, to fully explain away a specific exposure-outcome
-association. Note that for outcome types other than relative risks,
-assumptions are involved with the approximate conversions used
-(VanderWeele & Ding, 2017).
+association. Stated otherwise, confounding associations that were
+jointly weaker than the E-value could not explain away the association.
+Note that for outcome types other than relative risks, assumptions are
+involved with the approximate conversions used (VanderWeele & Ding,
+2017).
 
 Alternatively, you can consider the confounding strength capable of
 moving the observed association to any other value (e.g. attenuating the
