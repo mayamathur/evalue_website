@@ -174,6 +174,9 @@ app as desired above.
 
 ## Local development with jekyll
 
+
+### One-time steps to set up jekyll locally
+
 Install jekyll (one time setup inside the directory): skip steps as appropriate, e.g. if you have Ruby installed etc (`ruby -v` should return Ruby version).
 See more about Ruby and Jekyll installation [here](https://jekyllrb.com/docs/installation/).
 
@@ -199,7 +202,7 @@ gem install --user-install bundler jekyll
 bundle install
 ```
 
-When you edit your files and want to check locally how the site looks, use this:
+When you edit your files and want to check locally how the site looks, first make sure you are in the top-level directory `evalue_website` (where the jekyll files live) and then use this:
 
 ```bash
 bundle exec jekyll serve
@@ -209,3 +212,8 @@ This will build the site that you can check at `http://127.0.0.1:4000` in
 your browser. When you change the source it render the changes
 but you have to click refresh in the browser to see the changes.
 Stop the server with Ctrl+C in the command line.
+
+## Troubleshooting common error messages
+
+* If `bundle exec jekyll serve` fails with the error `Configuration file: none`, you are probably not in the top-level directory `evalue_website`.
+
