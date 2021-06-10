@@ -28,7 +28,8 @@ Methods and tools are also available to conduct analogous sensitivity analyses f
 - Selection bias (Smith & VanderWeele, 2019a; [online tool](http://www.selection-bias.com/) or R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Measurement error (VanderWeele & Li, 2019; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - A combination of unmeasured confounding, selection bias, and measurement error simultaneously (Smith et al, 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-- An analog of the E-value is also available to address unmeasured mediator-outcome confounding when carrying out mediation analysis for direct and indirect effects (Smith & VanderWeele, 2019b).
+- Unmeasured mediator-outcome confounding in mediation analysis for direct and indirect effects (Smith & VanderWeele, 2019b)
+- Unmeasured confounding of effect heterogeneity or causal interaction estimates (Mathur et al., 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 
 Finally, similar approaches are also available to assess biases in meta-analyses including:
 
@@ -59,11 +60,13 @@ Mathur MB & VanderWeele TJ (2020a). Sensitivity analysis for unmeasured confound
 
 Mathur MB & VanderWeele TJ (2020b). Sensitivity analysis for publication bias in meta-analyses. Journal of the Royal Statistical Society: Series C, 69(5), 1091-1119. [Link](https://rss.onlinelibrary.wiley.com/doi/10.1111/rssc.12440)
 
+Mathur MB, Smith LH, Yoshida K, Ding P, VanderWeele TJ (2021). E-values for effect heterogeneity and conservative approximations for causal interaction. Under review. [Link](https://osf.io/h6pru/).
+
 Smith LH & VanderWeele TJ (2019a). Bounding bias due to selection. Epidemiology 30(4), 509-516. [Link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6553568/); [online tool](http://www.selection-bias.com/)
 
 Smith LH & VanderWeele TJ (2019b). Mediational E-values: Approximate sensitivity analysis for mediator-outcome confounding. Epidemiology 30(6), 835-837. [Link](https://journals.lww.com/epidem/Fulltext/2019/11000/Mediational_E_values__Approximate_Sensitivity.9.aspx)
 
-Smith LH & VanderWeele TJ (2021). Multiple-bias sensitivity analysis using bounds. Epidemiology (in press). [Link](https://arxiv.org/abs/2005.02908)
+Smith LH, Mathur MB, VanderWeele TJ (2021). Multiple-bias sensitivity analysis using bounds. Epidemiology (in press). [Link](https://arxiv.org/abs/2005.02908)
 
 VanderWeele TJ & Ding P (2017). Sensitivity analysis in observational research: Introducing the E-value. Annals of Internal Medicine, 167(4), 268-274. [Link](https://annals.org/aim/fullarticle/2643434/sensitivity-analysis-observational-research-introducing-e-value)
 
@@ -74,3 +77,5 @@ VanderWeele TJ, Mathur MB, & Ding P (2019b). Correcting misinterpretations of th
 VanderWeele TJ & Li Y (2019). Simple sensitivity analysis for differential measurement error. American Journal of Epidemiology, 188(10), 1823-1829. [Link](https://academic.oup.com/aje/article/188/10/1823/5506602?casa_token=5ZyiVJp9_5UAAAAA:40rpOH1mRz0IDeRJ35atRRk9x6MJgIHMNOxLCcsnfouzN3qWXrght0XVWNIHQcRwWP1Bhgl8vY9B)
 
 VanderWeele, TJ & Mathur MB. (2020). Commentary: developing best-practice guidelines for the reporting of E-values. International Journal of Epidemiology, 49(5), 1495-1497. [Link](https://academic.oup.com/ije/article/49/5/1495/5879832)
+
+Zhang X, Stamey JD, Mathur MB (2020). Assessing the impact of unmeasured confounders for credible and reliable real-world evidence. Pharmacoepidemiology and Drug Safety, 29:1219–1227. [Link](https://osf.io/fe4gs)
