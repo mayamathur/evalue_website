@@ -218,3 +218,5 @@ Stop the server with Ctrl+C in the command line.
 
 * If `bundle exec jekyll serve` fails with the error `Configuration file: none`, you are probably not in the top-level directory `evalue_website`.
 
+* If deployment triggers the message "Unable to push branch because the branch is behind the deployed branch" followed by the error "Error: spawnSync /bin/sh ENOENT", check if the paths in `.github/deploy.yml` are named correctly. 
+
