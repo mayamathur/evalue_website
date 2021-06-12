@@ -220,3 +220,4 @@ Stop the server with Ctrl+C in the command line.
 
 * If deployment triggers the message "Unable to push branch because the branch is behind the deployed branch" followed by the error "Error: spawnSync /bin/sh ENOENT", check if the paths in `.github/deploy.yml` are named correctly. 
 
+* If updating the `renv.lock` file doesn't seem to work (i.e., the website still runs the old version of package), open `renv.lock` itself and make sure it lists whatever package you needed to update.
