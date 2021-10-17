@@ -16,15 +16,20 @@ E-values (VanderWeele & Ding, 2017) using the R package
 [EVALUE](https://ideas.repec.org/c/boc/bocode/s458592.html) (Linden et
 al., 2020).
 
-For more information on the interpretation of the E-value and further
-technical details, see Ding & VanderWeele (2016), Haneuse et al. (2019),
-VanderWeele et al. (2019a), and VanderWeele et al. (2019b).
+Further papers provide more information on the use and interpretation of
+E-values (Haneuse et al., 2019; VanderWeele et al. 2019b; VanderWeele,
+2021), technical details concerning E-values (Ding & VanderWeele, 2016;
+VanderWeele et al., 2019a) and reporting guidelines for E-values
+(VanderWeele and Mathur, 2020).
 
 ## More resources for other biases and study designs
 
 Methods and tools are also available to conduct analogous sensitivity
 analyses for other types of biases, including:
 
+  - Unmeasured confounding of effect heterogeneity or causal interaction
+    estimates (Mathur et al., 2021; R package
+    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Selection bias (Smith & VanderWeele, 2019a; [online
     tool](http://www.selection-bias.com/) or R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
@@ -35,9 +40,6 @@ analyses for other types of biases, including:
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Unmeasured mediator-outcome confounding in mediation analysis for
     direct and indirect effects (Smith & VanderWeele, 2019b)
-  - Unmeasured confounding of effect heterogeneity or causal interaction
-    estimates (Mathur et al., 2021; R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 
 Finally, similar approaches are also available to assess biases in
 meta-analyses including:
@@ -131,6 +133,10 @@ VanderWeele, TJ & Mathur MB. (2020). Commentary: developing
 best-practice guidelines for the reporting of E-values. International
 Journal of Epidemiology, 49(5), 1495-1497.
 [Link](https://academic.oup.com/ije/article/49/5/1495/5879832)
+
+VanderWeele TJ (2021). Are Greenland, Ioannidis and Poole opposed to the
+Cornfield conditions? A defence of the E-value. International Journal of
+Epidemiology, dyab218. [Link](https://doi.org/10.1093/ije/dyab218)
 
 Zhang X, Stamey JD, Mathur MB (2020). Assessing the impact of unmeasured
 confounders for credible and reliable real-world evidence.
