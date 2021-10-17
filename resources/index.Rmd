@@ -19,17 +19,18 @@ knitr::opts_chunk$set(
 
 In addition to using this online tool, you can alternatively compute E-values (VanderWeele & Ding, 2017) using the R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html) (Mathur et al., 2018) or the Stata module [EVALUE](https://ideas.repec.org/c/boc/bocode/s458592.html) (Linden et al., 2020).
 
-For more information on the interpretation of the E-value and further technical details, see Ding & VanderWeele (2016), Haneuse et al. (2019), VanderWeele et al. (2019a), and VanderWeele et al. (2019b).
+Further papers provide more information on the use and interpretation of E-values (Haneuse et al., 2019; VanderWeele et al. 2019b; VanderWeele, 2021), technical details concerning E-values (Ding & VanderWeele, 2016; VanderWeele et al., 2019a) and reporting guidelines for E-values (VanderWeele and Mathur, 2020).
 
 ## More resources for other biases and study designs
 
 Methods and tools are also available to conduct analogous sensitivity analyses for other types of biases, including:
 
+- Unmeasured confounding of effect heterogeneity or causal interaction estimates (Mathur et al., 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Selection bias (Smith & VanderWeele, 2019a; [online tool](http://www.selection-bias.com/) or R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Measurement error (VanderWeele & Li, 2019; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - A combination of unmeasured confounding, selection bias, and measurement error simultaneously (Smith et al, 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Unmeasured mediator-outcome confounding in mediation analysis for direct and indirect effects (Smith & VanderWeele, 2019b)
-- Unmeasured confounding of effect heterogeneity or causal interaction estimates (Mathur et al., 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+
 
 Finally, similar approaches are also available to assess biases in meta-analyses including:
 
@@ -77,5 +78,7 @@ VanderWeele TJ, Mathur MB, & Ding P (2019b). Correcting misinterpretations of th
 VanderWeele TJ & Li Y (2019). Simple sensitivity analysis for differential measurement error. American Journal of Epidemiology, 188(10), 1823-1829. [Link](https://academic.oup.com/aje/article/188/10/1823/5506602?casa_token=5ZyiVJp9_5UAAAAA:40rpOH1mRz0IDeRJ35atRRk9x6MJgIHMNOxLCcsnfouzN3qWXrght0XVWNIHQcRwWP1Bhgl8vY9B)
 
 VanderWeele, TJ & Mathur MB. (2020). Commentary: developing best-practice guidelines for the reporting of E-values. International Journal of Epidemiology, 49(5), 1495-1497. [Link](https://academic.oup.com/ije/article/49/5/1495/5879832)
+
+VanderWeele TJ (2021). Are Greenland, Ioannidis and Poole opposed to the Cornfield conditions? A defence of the E-value. International Journal of Epidemiology, dyab218. [Link](https://doi.org/10.1093/ije/dyab218)
 
 Zhang X, Stamey JD, Mathur MB (2020). Assessing the impact of unmeasured confounders for credible and reliable real-world evidence. Pharmacoepidemiology and Drug Safety, 29:1219–1227. [Link](https://osf.io/fe4gs)
