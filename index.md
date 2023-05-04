@@ -21,24 +21,27 @@ Please use the following citations when using this website:
 
 ## Computing an E-value
 
-The tab [Compute an E-value](http://www.evalue-calculator.com/evalue/)
-computes the E-value, defined as the minimum strength of association on
-the risk ratio scale that an unmeasured confounder would need to have
-with both the exposure and the outcome, conditional on the measured
-covariates, to fully explain away a specific exposure-outcome
-association. Stated otherwise, confounding associations that were
-jointly weaker than the E-value could not explain away the association.
-Note that for outcome types other than relative risks, assumptions are
-involved with the approximate conversions used (VanderWeele & Ding,
-2017).
+**Basic E-values:** The tab [Compute an
+E-value](http://www.evalue-calculator.com/evalue/) computes the E-value,
+defined as the minimum strength of association on the risk ratio scale
+that an unmeasured confounder would need to have with both the exposure
+and the outcome, conditional on the measured covariates, to fully
+explain away a specific exposure-outcome association. Stated otherwise,
+confounding associations that were jointly weaker than the E-value could
+not explain away the association. Note that for outcome types other than
+relative risks, assumptions are involved with the approximate
+conversions used (VanderWeele & Ding, 2017).
 
-Alternatively, you can consider the confounding strength capable of
-moving the observed association to any other value (e.g. attenuating the
-observed association to a true causal effect that is no longer
-scientifically important, or alternatively increasing a near-null
-observed association to a value that is of scientific importance). For
-this purpose, simply type a non-null effect size into the box “True
-causal effect to which to shift estimate” when computing the E-value.
+Non-null E-values: Alternatively, you can consider the confounding
+strength capable of moving the observed association to any other value
+(e.g. attenuating the observed association to a true causal effect that
+is no longer scientifically important, or alternatively increasing a
+near-null observed association to a value that is of scientific
+importance). For this purpose, simply type a non-null effect size into
+the box “True causal effect to which to shift estimate” when computing
+the E-value.
+
+E-values for effect-measure modification: evalue::evalues.IC
 
 ## Computing a bias factor
 

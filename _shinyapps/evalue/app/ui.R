@@ -7,7 +7,7 @@ nonnull.mess = 'Note: You are calculating a "non-null" E-value, i.e., an E-value
 
 # message to display for OLS
 OLS.mess = 'Note: Using the standard deviation of the outcome yields a conservative approximation
-of the standardized mean difference. For a non-conservative estimate, you could instead use the estimated ressidual standard deviation from your linear
+of the standardized mean difference. For a non-conservative estimate, you could instead use the estimated residual standard deviation from your linear
 regression model. Regardless, the reported E-value for the confidence interval treats the
 standard deviation as known, not estimated.'
 
@@ -26,14 +26,18 @@ ui =
 
             sidebarPanel(
                 selectInput( "outcomeType", label = "Outcome type",
-                             choices = c( "Relative risk / rate ratio" = "RR",
-                                          "Odds ratio (outcome prevalence <15%)" = "OR.rare",
-                                          "Odds ratio (outcome prevalence >15%)" = "OR.com",
-                                          "Hazard ratio (outcome prevalence <15%)" = "HR.rare",
-                                          "Hazard ratio (outcome prevalence >15%)" = "HR.com",
-                                          "Standardized mean difference (d)" = "MD",
-                                          "Risk difference" = "RD",
-                                          "Linear regression coefficient" = "OLS" ) ),
+                             choices = c( "- Relative risk / rate ratio" = "RR",
+                                          "- Odds ratio (outcome prevalence <15%)" = "OR.rare",
+                                          "- Odds ratio (outcome prevalence >15%)" = "OR.com",
+                                          "- Hazard ratio (outcome prevalence <15%)" = "HR.rare",
+                                          "- Hazard ratio (outcome prevalence >15%)" = "HR.com",
+                                          "- Standardized mean difference (d)" = "MD",
+                                          "- Risk difference" = "RD",
+                                          "- Linear regression coefficient" = "OLS" ) ),
+
+                selectInput( "estType", label = "Estimate type",
+                             choices = c( "- Main effect (of 1 exposure)" = "main",
+                                          "- Statistical interaction for effect modification (between 2 exposures)" = "EMM" ) ),
 
 
                 # conditional panels that appear depending on selected outcome type
