@@ -9,7 +9,7 @@ output:
 
 ## More resources for E-values for unmeasured confounding
 
-In addition to using this online tool, you can alternatively compute
+In addition to using this website, you can alternatively compute
 E-values (VanderWeele & Ding, 2017) using the R package
 [EValue](https://cran.r-project.org/web/packages/EValue/index.html)
 (Mathur et al., 2018) or the Stata module
