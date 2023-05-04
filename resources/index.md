@@ -33,6 +33,8 @@ analyses for other types of biases, including:
   - Selection bias (Smith & VanderWeele, 2019a; [online
     tool](http://www.selection-bias.com/) or R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+    - Missing data or selection bias (Mathur, 2023; or R package
+    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Measurement error (VanderWeele & Li, 2019; R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - A combination of unmeasured confounding, selection bias, and
@@ -91,6 +93,12 @@ Mathur MB & VanderWeele TJ (2020b). Sensitivity analysis for publication
 bias in meta-analyses. Journal of the Royal Statistical Society: Series
 C, 69(5), 1091-1119.
 [Link](https://rss.onlinelibrary.wiley.com/doi/10.1111/rssc.12440)
+
+Mathur MB (2023). The M-value: A simple sensitivity analysis for bias due to missing data in treatment effect estimates. American Journal of Epidemiology, 192(4), 612-620. [Link](https://academic.oup.com/aje/article/192/4/612/6873724)
+
+Mathur MB, Smith LH, Yoshida K, Ding P, VanderWeele TJ (2021). E-values
+for effect heterogeneity and conservative approximations for causal
+interaction. International Journal of Epidemiology, 51(4), 1268-1275. [Link](https://academic.oup.com/ije/article/51/4/1268/6573242/).
 
 Mathur MB, Smith LH, Yoshida K, Ding P, VanderWeele TJ (2021). E-values
 for effect heterogeneity and conservative approximations for causal
