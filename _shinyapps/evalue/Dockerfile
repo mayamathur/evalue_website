@@ -1,9 +1,5 @@
-# change here is you want to pin R version
-# r-base is slow because it has no packages installed
-#FROM rocker/r-base:latest
-
-# this has shiny etc and is much faster to set up
-# R version is pinned
+# this is much faster to set up
+# uses latest R version
 FROM ghcr.io/analythium/deps:latest
 
 # change maintainer here
