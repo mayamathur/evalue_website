@@ -26,7 +26,7 @@ Further papers provide more information on the use and interpretation of E-value
 Methods and tools are also available to conduct analogous sensitivity analyses for other types of biases, including:
 
 - Unmeasured confounding of effect heterogeneity or causal interaction estimates (Mathur et al., 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-- Selection bias (Smith & VanderWeele, 2019a; [online tool](http://www.selection-bias.com/) or R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Selection bias (Smith & VanderWeele, 2019a; [online tool](https://www.selection-bias.louisahsmith.com/) or R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Measurement error (VanderWeele & Li, 2019; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - A combination of unmeasured confounding, selection bias, and measurement error simultaneously (Smith et al, 2021; R package [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
 - Unmeasured mediator-outcome confounding in mediation analysis for direct and indirect effects (Smith & VanderWeele, 2019b)
