@@ -65,7 +65,7 @@ the function `evalues.IC` in the R package
 Additionally, if you have substantive knowledge on the strength of the
 relationships between the unmeasured confounder(s) and the exposure and
 outcome, you can use these numbers to [calculate the bias
-factor](https://bias-factor.hmdc.harvard.edu/).
+factor](https://qsu-stanford.shinyapps.io/bias_factor/).
 
 ## Bug reports
 
