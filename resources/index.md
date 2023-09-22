@@ -9,7 +9,7 @@ output:
 
 ## More resources for E-values for unmeasured confounding
 
-In addition to using this website, you can alternatively compute
+In addition to using this online tool, you can alternatively compute
 E-values (VanderWeele & Ding, 2017) using the R package
 [EValue](https://cran.r-project.org/web/packages/EValue/index.html)
 (Mathur et al., 2018) or the Stata module
@@ -27,32 +27,31 @@ VanderWeele et al., 2019a) and reporting guidelines for E-values
 Methods and tools are also available to conduct analogous sensitivity
 analyses for other types of biases, including:
 
-  - Unmeasured confounding of effect heterogeneity or causal interaction
-    estimates (Mathur et al., 2021; R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - Selection bias (Smith & VanderWeele, 2019a; [online
-    tool](http://www.selection-bias.com/) or R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-    - Missing data or selection bias (Mathur, 2023; or R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - Measurement error (VanderWeele & Li, 2019; R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - A combination of unmeasured confounding, selection bias, and
-    measurement error simultaneously (Smith et al, 2021; R package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - Unmeasured mediator-outcome confounding in mediation analysis for
-    direct and indirect effects (Smith & VanderWeele, 2019b)
+- Unmeasured confounding of effect heterogeneity or causal interaction
+  estimates (Mathur et al., 2021; R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Selection bias (Smith & VanderWeele, 2019a; [online
+  tool](ttps://www.selection-bias.louisahsmith.com/) or R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Missing data or selection bias (Mathur, 2023; or R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Measurement error (VanderWeele & Li, 2019; R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- A combination of unmeasured confounding, selection bias, and
+  measurement error simultaneously (Smith et al, 2021; R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Unmeasured mediator-outcome confounding in mediation analysis for
+  direct and indirect effects (Smith & VanderWeele, 2019b)
 
 Finally, similar approaches are also available to assess biases in
 meta-analyses including:
 
-  - Unmeasured confounding in meta-analyses (Mathur & VanderWeele,
-    2020a; [online tool](http://www.evalue-calculator.com/meta/) or R
-    package
-    [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - Publication bias in meta-analyses (Mathur & VanderWeele, 2020b; R
-    package
-    [PublicationBias](https://cran.r-project.org/web/packages/PublicationBias/index.html))
+- Unmeasured confounding in meta-analyses (Mathur & VanderWeele, 2020a;
+  [online tool](http://www.evalue-calculator.com/meta/) or R package
+  [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
+- Publication bias in meta-analyses (Mathur & VanderWeele, 2020b; R
+  package
+  [PublicationBias](https://cran.r-project.org/web/packages/PublicationBias/index.html))
 
 ## Developers
 
@@ -93,12 +92,6 @@ Mathur MB & VanderWeele TJ (2020b). Sensitivity analysis for publication
 bias in meta-analyses. Journal of the Royal Statistical Society: Series
 C, 69(5), 1091-1119.
 [Link](https://rss.onlinelibrary.wiley.com/doi/10.1111/rssc.12440)
-
-Mathur MB (2023). The M-value: A simple sensitivity analysis for bias due to missing data in treatment effect estimates. American Journal of Epidemiology, 192(4), 612-620. [Link](https://academic.oup.com/aje/article/192/4/612/6873724)
-
-Mathur MB, Smith LH, Yoshida K, Ding P, VanderWeele TJ (2021). E-values
-for effect heterogeneity and conservative approximations for causal
-interaction. International Journal of Epidemiology, 51(4), 1268-1275. [Link](https://academic.oup.com/ije/article/51/4/1268/6573242/).
 
 Mathur MB, Smith LH, Yoshida K, Ding P, VanderWeele TJ (2021). E-values
 for effect heterogeneity and conservative approximations for causal
@@ -150,3 +143,8 @@ Zhang X, Stamey JD, Mathur MB (2020). Assessing the impact of unmeasured
 confounders for credible and reliable real-world evidence.
 Pharmacoepidemiology and Drug Safety, 29:1219–1227.
 [Link](https://osf.io/fe4gs)
+
+Mathur MB (2023). The M-value: A simple sensitivity analysis for bias
+due to missing data in treatment effect estimates. American Journal of
+Epidemiology, 192(4), 612-620.
+[Link](https://academic.oup.com/aje/article/192/4/612/6873724?login=false)
