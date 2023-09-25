@@ -32,7 +32,7 @@ analyses for other types of biases, including:
   - Selection bias (Smith & VanderWeele, 2019a; [online
     tool](ttps://www.selection-bias.louisahsmith.com/) or R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
-  - Missing data or selection bias (Mathur, 2023; or R package
+  - Missing data or selection bias (Mathur, 2023; R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
   - Measurement error (VanderWeele & Li, 2019; R package
     [EValue](https://cran.r-project.org/web/packages/EValue/index.html))
