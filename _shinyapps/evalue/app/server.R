@@ -6,8 +6,13 @@ server = function(input, output, session) {
             if ( is.na( input$est.RR )) return("Enter your point estimate")
             if ( is.na( input$trueRR )) return("Enter a true value")
 
+            if ( input$estType == "main" ) {
+                evals = round( evalues.RR( est = input$est.RR, lo = input$lo.RR, hi = input$hi.RR, true = input$trueRR )[2,], 2 )
+            }
 
-            evals = round( evalues.RR( est = input$est.RR, lo = input$lo.RR, hi = input$hi.RR, true = input$trueRR )[2,], 2 )
+            if ( input$estType == "EMM" ) {
+                evals = round( evalues.RR( est = sqrt(input$est.RR), lo = sqrt(input$lo.RR), hi = sqrt(input$hi.RR), true = input$trueRR )[2,], 2 )
+            }
 
         }
 
@@ -15,14 +20,29 @@ server = function(input, output, session) {
             if ( is.na( input$est.OR.rare )) return("Enter your point estimate")
             if ( is.na( input$trueORrare )) return("Enter a true value")
 
-            evals = round( evalues.OR( est = input$est.OR.rare, lo = input$lo.OR.rare, hi = input$hi.OR.rare, rare = TRUE, true = input$trueORrare )[2,], 2 )
+
+            if ( input$estType == "main" ) {
+                evals = round( evalues.OR( est = input$est.OR.rare, lo = input$lo.OR.rare, hi = input$hi.OR.rare, rare = TRUE, true = input$trueORrare )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                evals = round( evalues.OR( est = sqrt(input$est.OR.rare), lo = sqrt(input$lo.OR.rare), hi = sqrt(input$hi.OR.rare), rare = TRUE, true = input$trueORrare )[2,], 2 )
+            }
+
         }
 
         if ( input$outcomeType == "OR.com" ) {
             if ( is.na( input$est.OR.com )) return("Enter your point estimate")
             if ( is.na( input$trueORcom )) return("Enter a true value")
 
-            evals = round( evalues.OR( est = input$est.OR.com, lo = input$lo.OR.com, hi = input$hi.OR.com, rare = FALSE, true = input$trueORcom )[2,], 2 )
+            if ( input$estType == "main" ) {
+                evals = round( evalues.OR( est = input$est.OR.com, lo = input$lo.OR.com, hi = input$hi.OR.com, rare = FALSE, true = input$trueORcom )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                evals = round( evalues.OR( est = sqrt(input$est.OR.com), lo = sqrt(input$lo.OR.com), hi = sqrt(input$hi.OR.com), rare = FALSE, true = input$trueORcom )[2,], 2 )
+            }
+
         }
 
 
@@ -30,32 +50,60 @@ server = function(input, output, session) {
             if ( is.na( input$est.HR.rare )) return("Enter your point estimate")
             if ( is.na( input$trueHRrare )) return("Enter a true value")
 
-            evals = round( evalues.HR( est = input$est.HR.rare, lo = input$lo.HR.rare, hi = input$hi.HR.rare, rare = TRUE, true = input$trueHRrare )[2,], 2 )
+            if ( input$estType == "main" ) {
+                evals = round( evalues.HR( est = input$est.HR.rare, lo = input$lo.HR.rare, hi = input$hi.HR.rare, rare = TRUE, true = input$trueHRrare )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                evals = round( evalues.HR( est = sqrt(input$est.HR.rare), lo = sqrt(input$lo.HR.rare), hi = sqrt(input$hi.HR.rare), rare = TRUE, true = input$trueHRrare )[2,], 2 )
+            }
+
         }
 
         if ( input$outcomeType == "HR.com" ) {
             if ( is.na( input$est.HR.com )) return("Enter your point estimate")
             if ( is.na( input$trueHRcom )) return("Enter a true value")
 
-            evals = round( evalues.HR( est = input$est.HR.com, lo = input$lo.HR.com, hi = input$hi.HR.com, rare = FALSE, true = input$trueHRcom )[2,], 2 )
+            if ( input$estType == "main" ) {
+                evals = round( evalues.HR( est = input$est.HR.com, lo = input$lo.HR.com, hi = input$hi.HR.com, rare = FALSE, true = input$trueHRcom )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                evals = round( evalues.HR( est = sqrt(input$est.HR.com), lo = sqrt(input$lo.HR.com), hi = sqrt(input$hi.HR.com), rare = FALSE, true = input$trueHRcom )[2,], 2 )
+            }
+
         }
 
         if ( input$outcomeType == "MD" ) {
             if ( is.na( input$est.MD )) return("Enter your point estimate")
             if ( is.na( input$trueMD )) return("Enter a true value")
 
-            evals = round( evalues.MD( est = input$est.MD, se = input$se.MD, true = input$trueMD )[2,], 2 )
+            if ( input$estType == "main" ) {
+                evals = round( evalues.MD( est = input$est.MD, se = input$se.MD, true = input$trueMD )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                stop("The E-value for effect modification on this scale isn't implemented yet.")
+            }
+
         }
 
         if ( input$outcomeType == "OLS" ) {
             if ( is.na( input$estOLS ) ) return("Enter your point estimate")
             if ( is.na( input$sdOLS ) ) return("Enter your standard deviation")
             if ( is.na( input$trueOLS )) return("Enter a true value")
-            evals = round( evalues.OLS( est = input$estOLS,
-                                        se = input$seOLS,
-                                        sd = input$sdOLS,
-                                        delta = input$deltaOLS,
-                                        true = input$trueOLS )[2,], 2 )
+
+            if ( input$estType == "main" ) {
+                evals = round( evalues.OLS( est = input$estOLS,
+                                            se = input$seOLS,
+                                            sd = input$sdOLS,
+                                            delta = input$deltaOLS,
+                                            true = input$trueOLS )[2,], 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                stop("The E-value for effect modification on this scale isn't implemented yet.")
+            }
 
         }
 
@@ -66,8 +114,16 @@ server = function(input, output, session) {
                 return("Enter all of the above information")
             }
 
-            evals = round( as.numeric( evalues.RD( n11 = input$n11, n10 = input$n10, n01 = input$n01, n00 = input$n00,
-                                                   true = input$trueRD, alpha = input$alpha, grid = input$grid ) ), 2 )
+            if ( input$estType == "main" ) {
+                evals = round( as.numeric( evalues.RD( n11 = input$n11, n10 = input$n10, n01 = input$n01, n00 = input$n00,
+                                                       true = input$trueRD, alpha = input$alpha, grid = input$grid ) ), 2 )
+            }
+
+            if ( input$estType == "EMM" ) {
+                stop("The E-value for effect modification on this scale isn't implemented, but the approach is described in Mathur et al. (2019).")
+            }
+
+
 
         }
 
