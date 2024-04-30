@@ -88,6 +88,7 @@ server = function(input, output, session) {
 
         }
 
+
         if ( input$outcomeType == "OLS" ) {
             if ( is.na( input$estOLS ) ) return("Enter your point estimate")
             if ( is.na( input$sdOLS ) ) return("Enter your standard deviation")
